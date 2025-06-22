@@ -6,7 +6,9 @@
     list-style: none;
     text-decoration: none;
     font-family: "Space Grotesk", sans-serif;
+    scroll-behavior: smooth;
 }
+/* hero session  */
 main{
     position: relative;
     width: 100%;
@@ -123,7 +125,8 @@ main .hero_session .main_label>button:active{
 }
 main .hero_session .main_label button a{
     font-size: 1rem;
-    font-weight: 600;
+    color: black;
+    font-weight: 500;
 }
 main .hero_session .main_label button::before{
     content: "";
@@ -146,6 +149,9 @@ main .hero_session>img{
     right: 10%;
     width: 28rem;
     top: -8rem;
+}
+main header .menu_bar a{
+    color: black;
 }
 @media screen and (max-width:1330px) {
     main header {
@@ -431,3 +437,5 @@ main .hero_session>img{
         padding: 2.5rem 4rem;
     }
 }
+/* end hero session */
+

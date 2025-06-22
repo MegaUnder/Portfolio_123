@@ -34,6 +34,7 @@
      <script>
         function ftmenubar(a){
             a.classList.toggle("menu_bar_JS");
+            setTimeout(()=>{
             if(a.classList[1] && a.classList[0]){
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function(){
@@ -45,7 +46,10 @@
                 xhttp.send();
             }else{
                 a.querySelector('a').innerText="View Menu";
-            }   
+            }
+            },100)
+               
+            
         }
 
 

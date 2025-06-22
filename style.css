@@ -427,4 +427,7 @@ main .hero_session>img{
         top: 28%;
         text-align: center;
     }
+    main header {
+        padding: 2.5rem 4rem;
+    }
 }

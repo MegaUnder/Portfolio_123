@@ -210,7 +210,7 @@ main .hero_session>img{
     }
     main header .menu_bar_JS{
         width: 50%;
-        height: 60vh;
+        height: 50vh;
         position: absolute;
     }
     main header button .header_menu_JS li{
@@ -273,6 +273,7 @@ main .hero_session>img{
     main .hero_session{
         top: 25%;
         text-align: center;
+        padding: 8%;
     }
     main .hero_session>.main_label>h4{
         font-size: .8rem;
@@ -293,5 +294,137 @@ main .hero_session>img{
         width: 18%;
         height: 4vh;
         right: 10%;
+    }    
+    main header .menu_bar{
+        display: block;
+        border-radius: 10px;
+        border: none;
+        width: 18%;
+        height: 5vh;
+        position: absolute;
+        right: 10%;
+        z-index: 10;
+    }
+    main header .menu_bar_JS{
+        width: 50%;
+        height: 40vh;
+        position: absolute;
+    }
+    main header button .header_menu_JS li{
+        line-height: 2;
+        padding: 2% 0;
+        position: relative;
+    }
+    main header button .header_menu_JS li a{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        transition: all .3s ease;
+    }
+    main header button .header_menu_JS li:hover a{
+        color: #BC6FF1;
+    }
+    main header button .header_menu_JS li:active a{
+        color: #f52626;
+    }
+    main header button .header_menu_JS li::before{
+        content: "";
+        width: 0%;
+        height: 2px;
+        bottom: 10px;
+        background-color: #f52626;
+        position: absolute;
+        left: 0;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        transition: all .5s ease;
+    }
+    main header button .header_menu_JS li:hover::before{
+        width: 20%;
+    }
+    main .hero_session{
+        top: 28%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:440px){
+    main .hero_session{
+        top: 20%;
+        text-align: center;
+        padding: 5%;
+    }
+    main .hero_session>.main_label>h4{
+        font-size: .6rem;
+    }
+    .hero_session>.main_label>h1{
+        font-size: 2.2rem;
+    }
+    main .hero_session>.main_label>p{
+        font-size: .6rem;
+    }
+    main .hero_session .main_label>button{
+        padding: 4px 14px;
+    }
+    main header #Logo a{
+        font-size: 2rem;
+    }
+    main header .menu_bar{
+        width: 18%;
+        height: 3.5vh;
+        right: 10%;
+        font-size: .6rem;
+    }
+        main header .menu_bar{
+        display: block;
+        border-radius: 10px;
+        border: none;
+        width: 18%;
+        height: 5vh;
+        position: absolute;
+        right: 10%;
+        z-index: 10;
+    }
+    main header .menu_bar_JS{
+        width: 50%;
+        height: 30vh;
+        position: absolute;
+    }
+    main header button .header_menu_JS li{
+        line-height: 2;
+        padding: 2% 0;
+        position: relative;
+    }
+    main header button .header_menu_JS li a{
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+        transition: all .3s ease;
+    }
+    main header button .header_menu_JS li:hover a{
+        color: #BC6FF1;
+    }
+    main header button .header_menu_JS li:active a{
+        color: #f52626;
+    }
+    main header button .header_menu_JS li::before{
+        content: "";
+        width: 0%;
+        height: 2px;
+        bottom: 10px;
+        background-color: #f52626;
+        position: absolute;
+        left: 0;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        transition: all .5s ease;
+    }
+    main header button .header_menu_JS li:hover::before{
+        width: 20%;
+    }
+    main .hero_session{
+        top: 28%;
+        text-align: center;
     }
 }

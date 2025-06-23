@@ -84,6 +84,7 @@
         width: 25rem;
         position: relative;
         top: 3rem;
+        margin-bottom: 1.5rem;
     }
     .about_session .about_text h1{
         font-size: 4.7rem;

@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portforlio</title>
 </head>
 <body>
     <!-- main session -->
     <main>
         <header>
-            <p id="Logo"><a href="#">Portforlio</a></p>
-            <ul class="header_menu">
+            <p id="Logo" data-aos="fade-right"><a href="#">Portforlio</a></p>
+            <ul class="header_menu" data-aos="fade-up">
                 <li><a href="#">Home</a></li>
                 <li><a href="#About_Session">About</a></li>
                 <li><a href="#">Education</a></li>
@@ -22,21 +23,21 @@
             <button class="menu_bar " onclick="ftmenubar(this)"><a href="#" id="menu_respond">View Menu</a></button>
         </header>
         <div class="hero_session">
-            <div class="main_label">
+            <div class="main_label" data-aos="fade-right">
                 <h4>Wellcome To My Portfolio</h4>
                 <h1>I'm SOK VICHEKA</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita <br> possimus rerum vitae! Officia, reiciendis omnis. Quo cupiditate velit <br> sapiente molestiae.</p>
                 <button><a href="/SOK VICHEKA.pdf" target="_blank">Curriculum Vitae</a></button>
             </div> 
-            <img src="profile1.png" >   
+            <img data-aos="zoom-in" src="profile1.png" >   
         </div>
     </main>
     <!-- main session -->
     <!-- =========================================================================================================== -->
     <!-- about session -->
      <div class="about_session" id="About_Session">
-        <div class="about_img1"><img src="/about_img.png" alt=""></div>
-        <div class="about_text">
+        <div class="about_img1"><img src="/about_img.png" alt="" data-aos="zoom-in"></div>
+        <div class="about_text" data-aos="fade-left">
             <h1>MEGA UNDER</h1>
             <p>My name is Sok Vicheka. I was born on November 29, 2004, <br> and I am currently 21 years old. My height is 1.75 meters. <br> I was born in Chreav Village, Srokram District, Siem Reap Province, Cambodia.
             <br> My present address is in Sihanoukville Province, Cambodia.</p>
@@ -60,7 +61,15 @@
         </div>
      </div>
     <!-- about session -->
+    <!-- =========================================================================================================== -->
+    <!-- education session -->
+    <div class="edu_session">
 
+    </div>
+
+
+
+    <!-- education session -->
 
 
 
@@ -91,5 +100,9 @@
 
 
      </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+    </script>
 </body>
 </html>
